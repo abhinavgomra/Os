@@ -1,0 +1,15 @@
+2026-04-10 20:59:15 | INFO | [OK] REGISTER actor=anonymous target=alice_demo detail=
+2026-04-10 21:00:01 | INFO | [OK] REGISTER actor=anonymous target=bob_demo detail=
+2026-04-10 21:00:15 | INFO | [OK] LOGIN actor=alice_demo target= detail=
+2026-04-10 21:00:33 | INFO | [OK] CREATE_FILE actor=alice_demo target=report_demo.txt detail=
+2026-04-10 21:00:39 | INFO | [OK] GRANT_PERMISSION actor=alice_demo target=report_demo.txt detail=target=bob_demo perm=read
+2026-04-10 21:00:44 | INFO | [OK] LOGOUT actor=alice_demo target= detail=
+2026-04-10 21:01:03 | INFO | [FAIL] LOGIN actor=bob_demo target= detail=bad_password attempts=1
+2026-04-10 21:01:17 | INFO | [OK] LOGIN actor=bob_demo target= detail=
+2026-04-10 21:01:22 | INFO | [OK] READ_FILE actor=bob_demo target=report_demo.txt detail=
+2026-04-10 21:01:30 | INFO | [FAIL] WRITE_FILE actor=bob_demo target=report_demo.txt detail=permission_denied
+2026-04-10 21:01:37 | INFO | [OK] LOGOUT actor=bob_demo target= detail=
+2026-04-10 21:01:55 | INFO | [FAIL] LOGIN actor=admin target= detail=bad_password attempts=1
+2026-04-10 21:02:09 | INFO | [OK] LOGIN actor=admin target= detail=
+2026-04-10 21:02:16 | INFO | [OK] ADMIN_DASHBOARD actor=admin target= detail=
+2026-04-10 21:02:23 | INFO | [OK] LOGOUT actor=admin target= detail=
